@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holiday Search</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="search-container">
+    <div class="search-header">
+      <h2>Search your Holiday</h2>
+    </div>
+    <div class="search-form">
+      <!-- Destination Dropdown -->
+      <div class="form-group">
+        <label for="destination">Select Your Destination:</label>
+        <select id="destination">
+          <option>All Destinations</option>
+          <option>Paris</option>
+          <option>New York</option>
+          <option>Tokyo</option>
+        </select>
+      </div>
+
+      <!-- Date Picker -->
+      <div class="form-group">
+        <label for="date">Select Your Date:</label>
+        <input type="date" id="date" />
+      </div>
+
+      <!-- Price Slider -->
+      <div class="form-group">
+        <label for="price">Max Price:</label>
+        <div class="price-range">
+          <input type="range" id="price" min="0" max="5000" step="100" value="2500" />
+          <span class="price-value">2500 $</span>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="promotions">
+          <label for="promotions">See only promotions</label>
+        </div>
+      </div>
+
+      <!-- More Filters Button -->
+      <div class="more-filters">
+        <button>
+          <i class="fa-solid fa-filter"></i> More Filters
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
