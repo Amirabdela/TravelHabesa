@@ -15,7 +15,7 @@ body {
     height: 116.6px;
   }
   .top-bar {
-    background-color: rgb(224, 195, 76);
+    background-color: #d57414;
     height: 38.8px;
   }
   .con{
@@ -174,15 +174,10 @@ body {
   } 
   .price-range input[type="range"] {
     flex: 1;
-    -webkit-appearance:none; 
     border: 0px;
+    border-radius: 0px;
     background: #ffffff;
   }
-      input[type="range"]::-webkit-slider-runnable-track {
-      background: #e0dfde; /* Brown color for filled part */
-      height: 8px;
-    }
-
   .price-v{
     display: flex;
     justify-content: space-between;
@@ -200,7 +195,7 @@ body {
     justify-content: center;
   }
   .more-filters button {
-    background:rgb(183, 108, 54);;
+    background:#d57414;
     color: #fff;
     border: none;
     font-size: 14px;
@@ -228,34 +223,171 @@ body {
     width: 1200px;
     padding: 20px;
     margin: auto;
+    color: #9a9a9a;
+    font-size: 14px;
+    line-height: 27px;
+    font-family: 'poppins', sans-serif;
   }
   .card-g1{
     display: flex;
   }
   .card {
-    border: 1px solid #ddd;
+    border: 1px solid #e6e5e5;
+    margin: 15px ;
     overflow: hidden;
-    text-align: center;
-    width: 404px;
-    height: 626px;
+    text-transform: capitalize;
+    text-align: left;
+    width: 369px;
+    height: 609px;
   }
   .card img {
     width: 100%;
-    height: 200px;
+    height: 231px;
     object-fit: cover;
   }
   .card-content {
-    padding: 15px;
+    padding: 30px;
   }
-  footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 10px;
+  h3{
+    letter-spacing: 0px;
+    font-weight: bold;
+    font-family: 'poppins'sans-serif;
+    font-size: 25px;
+    color: #000;
   }
-  .footer-container {
+  .card i{
+    font-size: 14px;
+    margin-right: 5px;
+    color: #dfdada;
+  }
+  .city{
+    color: #9a9a9a;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: normal;
+  }
+  .i-city{
+    margin-bottom: 10px;
+  }
+  .cult{
     display: flex;
     justify-content: space-between;
+    border-bottom:1px solid rgb(216, 216, 216) ;
+    border-top:1px solid rgb(216, 216, 216) ;
+    padding: 10px 0px;
   }
+  .cult h6{
+    font-size: 14px;
+    font-weight: normal;
+    color: #373737;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .cult h2{
+    font-size: 25px;
+    font-weight: normal;
+    color: #555555;
+  }
+  .card-content p{
+    margin: 20px 0px;
+    
+  }
+  .detail a{
+    padding: 5px 20px;
+    font-size: 14px;
+    line-height: 27px;
+    color: #ffffff;
+  }
+  .detail{
+    background-color: #994f04;
+    border: 0px;
+    border-radius: 30px;
+  }
+  .footer-container{
+    text-align: left;
+    background-size: cover;
+    background-image: url('assets/back\ \(2\).jpg');
+    height: 637px;
+    width: 1200px;
+    color: #ffffff;
+    padding: 0px 163.8px 0px 164.2px;
+
+  }
+
+  footer {
+    margin: 0px 20px ;
+    padding: 35px 30px ;
+    background-color: #ffffff ;
+    color: #a0a0a0;
+  }
+  .keep{
+    padding-top: 80px;
+    margin: 0% 15%;
+  }
+  .keep h3{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: px;
+  }
+ 
+  .with-us{
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    font-size: 26px;
+    margin-bottom: 40px;
+
+  }
+  input[type="text"]{
+    background-color: #f9f9f9;
+    border-width: 1px;
+    border-color: #f1f1f1;
+    border-radius: 30px;
+    border-style: solid;
+    padding: 10px 20px;
+    -webkit-appearance: none;
+    color: #a3a3a3;
+    width: 50%;
+  }
+  input[type="submit"][type="submit"] {
+    background-color: #d57414;
+    border-width: 0px;
+    border-color: #fff;
+    border-radius: 30px;
+    border-style: solid;
+    padding: 10px 20px;
+    -webkit-appearance: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+  }
+  .footer-content{
+    display: flex;
+
+  }
+  .footer-content p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+h4{
+  color: #4e4e4e;
+  font-size: 16px;
+  margin-bottom:20px ;
+}
+.footer-p{
+  width: 50%;
+}
+.footer-column{
+  margin: 0px 20px;
+}
   .footer-column ul {
     list-style: none;
     padding: 0;
@@ -264,6 +396,10 @@ body {
     margin-bottom: 10px;
   }
   .footer-bottom {
-    text-align: center;
-    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #7f4002;
+    margin: 0% 20px;
+    font-size: 12px;
+    padding: 20px;
   }
