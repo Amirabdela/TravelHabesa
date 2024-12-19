@@ -16,7 +16,7 @@ body {
     height: 116.6px;
   }
   .top-bar {
-    background-color: #d57414;
+    background-color: #EBD89F;
     height: 38.8px;
   }
   .con{
@@ -73,7 +73,7 @@ body {
     font-size: 16px;
     line-height: 16px;
     font-family: poppins;
-    color:#727475 ;
+    color:#6b6558;
   }
   .nav-links{
      margin-right: 40px;
@@ -89,15 +89,15 @@ body {
     line-height: 16px;
   }
   .book-now{
-    background-color: black;
+    background-color: #b36800;
     padding: 5px 20px;
     border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
     cursor: pointer;
   }
   .hero {
     text-align: left;
     background-size: cover;
-    color: rgb(0, 0, 0);
     background-image: url('assets/back\ \(2\).jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -125,10 +125,12 @@ body {
     font-size: 14px;
     letter-spacing: 2px;
     text-align: left;
+    color: #fffefe;
   }
   .hero h2{
     font-size: 36px;
     letter-spacing: 0px;
+    color: #ffffff;
   }
   .search {
     position: relative;
@@ -200,15 +202,16 @@ body {
     justify-content: center;
   }
   .more-filters button {
-    background:#d57414;
+    background:#bc5c02;
     color: #fff;
     border: none;
     font-size: 14px;
-    font-family:     font-family: 'open' sans-serif;
-    ;
+    font-family:'poppins' sans-serif;
+    font-weight: normal;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding: 7px 20px;
+    padding: 10px 20px;
+    border: 1px ;
     cursor: pointer;
     border-radius: 30px;
     position: relative;
@@ -222,7 +225,7 @@ body {
   }
   
   .more-filters button:hover {
-    background:rgb(40, 38, 31);;
+    background:rgb(96, 78, 14);;
   }
   .cards {
     width: 1200px;
@@ -247,7 +250,7 @@ body {
   }
   .card img {
     width: 100%;
-    height: 231px;
+    height: 40%;
     object-fit: cover;
   }
   .card-content {
@@ -304,10 +307,15 @@ body {
     color: #ffffff;
   }
   .detail{
-    background-color: #994f04;
-    border: 0px;
+    background-color: #a75b14;
+    border-width: 0px;
+    border-color: #000000;
     border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
   }
+  
   .footer-container{
     text-align: left;
     background-size: cover;
@@ -413,11 +421,44 @@ h4{
     .top-bar {
       display: none;
     }
+    header{
+      height: 77.8px;
+    }
     nav{
-      display: block;
+      padding: 12.5px 163.8px 0px 164.2px;
+      display: flex;
+      align-items: center;
+
+    }
+    .hero{
+      padding: 200px 163.8px 100px 164.2px;
     }
     .search{
-      display:;
+      box-shadow: none;
+      width: 1200px;
+    }
+    .search-form{
+      display:block;
+    }
+    .cards{
+      
+    }
+    .card-g1{
+      display: block;
+      width: 100%;
+    }
+    .card{
+      width: 100%;
+      height: 900px;
+      margin: 12.5px 163.8px 0px 164.2px;
+    }
+    .card img{
+     height: 65%;
+    }
+    .footer{
+      display: block;
     }
   }
+
+
   
