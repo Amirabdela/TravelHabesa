@@ -14,12 +14,8 @@
            <!-- Share Icon -->
             <div class="con">  
              <div class="socials"> 
-              <i class="fa-solid fa-earth-africa"></i>
-              <span class="lang">LANGUAGES</span>
-              <span class="lang">EN</span>
-              <span class="lang">ES</span>
-              <i class="fa-solid fa-share-nodes"></i>
-              <span class="lang">OUR SOCIALS</span>
+              <i class="fa-solid fa-earth-africa"></i><span class="lang">LANGUAGESENES</span>
+              <i class="fa-solid fa-share-nodes"></i><span class="lang">OUR SOCIALS</span>
               <i class="fa-brands fa-facebook-f"></i>
               <i class="fa-brands fa-instagram"></i>
               <i class="fa-brands fa-twitter"></i>
@@ -34,30 +30,29 @@
       </div>
     
       <!-- Navigation -->
+       <div class="nav-bar">
       <nav>
         <div class="logo">
           <strong>TRAVEL HABESHA.</strong>
         </div>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Packages</a></li>
-          <li><a href="#">Hotels</a></li>
-          <li><a href="#">Travel Cars</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact</a></li>
-          <li>
-            <button class="book-now">Book Now</button>
-          </li>
+        <ul>
+          <li class="nav-links"><a href="#">Home</a></li>
+          <li class="nav-links"><a href="#">Packages</a></li>
+          <li class="nav-links"><a href="#">Hotels</a></li>
+          <li class="nav-links"><a href="#">Travel Cars</a></li>
+          <li class="nav-links"><a href="#">About Us</a></li>
+          <li class="nav-links"><a href="#">Contact</a></li>
+          <li class="book-now"><a href="#">Book Now</a> </li>
         </ul>
       </nav>
+    </div>
     </header>
   <!-- Hero Section -->
   <section class="hero">
-    <div class="search-container">
-      <div class="search-header">
-        <h2>Search your Holiday</h2>
-      </div>
-      <div class="search-form">
+      <span id="our">OUR PACKAGES</span>
+      <h2>Search your Holiday</h2>
+     <div class="search">
+       <div class="search-form">
         <!-- Destination Dropdown -->
         <div class="form-group">
           <label for="destination">Select Your Destination:</label>
@@ -77,10 +72,12 @@
   
         <!-- Price Slider -->
         <div class="form-group">
+          <div class="price-v">
           <label for="price">Max Price:</label>
+          <span class="price-value">2500 $</span>
+        </div>
           <div class="price-range">
-            <input type="range" id="price" min="0" max="5000" step="100" value="2500" />
-            <span class="price-value">2500 $</span>
+            <input type="range" id="price" min="0" max="5000" step="100" value="2500" />  
           </div>
           <div class="checkbox">
             <input type="checkbox" id="promotions">
@@ -89,63 +86,140 @@
         </div>
   
         <!-- More Filters Button -->
-        <div class="more-filters">
+        
+    </div>
+    <div class="more-filters">
           <button>
             <i class="fa-solid fa-filter"></i> More Filters
           </button>
         </div>
       </div>
-    </div>
+  </div>
   </section>     
-   <!-- Cards Section -->
+  <!-- Cards Section -->
   <section class="cards">
-    <div class="card">
-      <img src="assets/lalibel1" alt="Lalibela">
-      <div class="card-content">
-        <h3>Lalibela</h3>
-        <p>Visit Lalibela's iconic rock-hewn churches, an ancient architectural wonder and UNESCO World Heritage site.</p>
-        <span>700$</span>
+   <div class="card-g1">
+     <div class="card">
+        <img src="assets/lalibelad3.jpg" alt="Lalibela">
+          <div class="card-content">
+            <h3>Lalibela</h3>
+            <div class="i-city"><i class="fa-solid fa-location-dot"></i><span class="city">addis ababa</span></div>
+            <div class="cult">
+            <div>
+            <h6>cultural</h6>
+            <h6>relax</h6>
+            </div>  
+            <h2>700$</h2>
+            </div>
+            <p>Visit Lalibela's iconic rock-hewn churches,
+              an ancient architectural wonder and UNESCO World Heritage site.
+            </p>
+            <button class="detail"><a href="">DETAILS</a></button>
+         </div>
       </div>
-    </div>
-    <div class="card">
-      <img src="assets/gonder1.jpg" alt="Gondar">
-      <button class="type"></button>
-      <div class="card-content">
-        <h3>Gondar</h3>
-        <span>500$</span>
-        <p>Explore the Royal Enclosure and its centuries-old castles, known as the "Camelot of Africa."</p>
-        <button class="detail"><a href="">DETAILS</a></button>
+      <div class="card">
+        <img src="assets/lalibelad3.jpg" alt="Lalibela">
+          <div class="card-content">
+            <h3>Lalibela</h3>
+            <div class="i-city"><i class="fa-solid fa-location-dot"></i><span class="city">addis ababa</span></div>
+            <div class="cult">
+            <div>
+            <h6>cultural</h6>
+            <h6>relax</h6>
+            </div>  
+            <h2>700$</h2>
+            </div>
+            <p>Visit Lalibela's iconic rock-hewn churches,
+              an ancient architectural wonder and UNESCO World Heritage site.
+            </p>
+            <button class="detail"><a href="">DETAILS</a></button>
+         </div>
       </div>
+      <div class="card">
+        <img src="assets/lalibelad3.jpg" alt="Lalibela">
+          <div class="card-content">
+            <h3>Lalibela</h3>
+            <div class="i-city"><i class="fa-solid fa-location-dot"></i><span class="city">addis ababa</span></div>
+            <div class="cult">
+            <div>
+            <h6>cultural</h6>
+            <h6>relax</h6>
+            </div>  
+            <h2>700$</h2>
+            </div>
+            <p>Visit Lalibela's iconic rock-hewn churches,
+              an ancient architectural wonder and UNESCO World Heritage site.
+            </p>
+            <button class="detail"><a href="">DETAILS</a></button>
+         </div>
+      </div>  
     </div>
-    <div class="card">
-      <img src="axum.jpg" alt="Axum">
-      <div class="card-content">
-        <h3>Axum</h3>
-        <p>Visit the ancient city of Axum, home to towering obelisks and rich Ethiopian history.</p>
-        <span>900$</span>
-      </div>
-    </div>
-    </div>
+    <div class="card-g1">
+      <div class="card">
+         <img src="assets/lalibelad3.jpg" alt="Lalibela">
+           <div class="card-content">
+             <h3>Lalibela</h3>
+             <p>Visit Lalibela's iconic rock-hewn churches, an ancient architectural wonder and UNESCO World Heritage site.</p>
+             <span>700$</span>
+             <button class="detail"><a href="">DETAILS</a></button>
+          </div>
+       </div>
+       <div class="card">
+         <img src="assets/lalibelad3.jpg" alt="Lalibela">
+           <div class="card-content">
+             <h3>Lalibela</h3>
+             <p>Visit Lalibela's iconic rock-hewn churches, an ancient architectural wonder and UNESCO World Heritage site.</p>
+             <span>700$</span>
+             <button class="detail"><a href="">DETAILS</a></button>
+          </div>
+       </div>
+       <div class="card">
+         <img src="assets/lalibelad3.jpg" alt="Lalibela">
+           <div class="card-content">
+             <h3>Lalibela</h3>
+             <p>Visit Lalibela's iconic rock-hewn churches, an ancient architectural wonder and UNESCO World Heritage site.</p>
+             <span>700$</span>
+             <button class="detail"><a href="">DETAILS</a></button>
+          </div>
+       </div>   
+     </div>
+    
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-column">
-        <h4>Travel Habesha</h4>
-        <p>Discover the best travel spots, with hassle-free booking and expert recommendations to make your adventures unforgettable.</p>
+<div class="footer-container">
+     <div class="keep">
+          <h3>keep in touch</h3>
+          <div class="with-us">
+            <h2>travel with us</h2>
+            <div>
+              <input type="text" size="40" maxlength="400" >
+              <input type="submit" value="send" >
       </div>
-      <div class="footer-column">
-        <h4>Quick Links</h4>
-        <ul>
+            
+          </div>
+  </div>
+    <footer class="footer">
+       <div class="footer-content">
+            <div class="footer-p">
+               <h4 id="log">Travel Habesha</h4>
+               <p>Discover the best travel spots, 
+                 with hassle-free booking and
+                 expert recommendations to make your adventures 
+                 unforgettable.
+                </p>
+            </div>
+       <div class="footer-column">
+         <h4>Quick Links</h4>
+         <ul>
           <li>Home</li>
           <li>Packages</li>
           <li>Hotels</li>
           <li>Travel Cars</li>
           <li>About Us</li>
-        </ul>
-      </div>
-      <div class="footer-column">
+         </ul>
+       </div>
+       <div class="footer-column">
         <h4>Resources</h4>
         <ul>
           <li>Blog</li>
@@ -153,8 +227,8 @@
           <li>Terms & Conditions</li>
           <li>FAQs</li>
         </ul>
-      </div>
-      <div class="footer-column">
+       </div>
+       <div class="footer-column">
         <h4>Last Minute</h4>
         <ul>
           <li>Weekend Deals</li>
@@ -162,11 +236,14 @@
           <li>Group Discounts</li>
           <li>Limited Offers</li>
         </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 Travel Habesha. All Rights Reserved.</p>
-    </div>
-  </footer>
+       </div>
+
+  </footer>       
+      <div class="footer-bottom">
+      <p>The Best Travel Platform for Exploring Ethiopia</p>
+      <p>Launched in 2024</p>
+       </div>
+</div>
+</div>
 </body>
 </html>

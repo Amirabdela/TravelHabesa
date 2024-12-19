@@ -7,8 +7,9 @@
 body {
   font-family: poppins;
   box-sizing: border-box;
-    text-decoration: none;
+  text-decoration: none;
   }
+ 
   header {
     padding: 0px 0;
     color: rgb(0, 0, 0);
@@ -98,8 +99,12 @@ body {
     background-size: cover;
     color: rgb(0, 0, 0);
     background-image: url('assets/back\ \(2\).jpg');
+    background-repeat: no-repeat;
+    background-position: center;
     height: 433px;
-    padding: 200px 178px 50px 179px;
+    width:1200px ;
+    padding: 200px 163.8px 50px 164.2px;
+   /* padding: 200px 178px 179px 50px;*/
 
   }
   h1{
@@ -127,11 +132,11 @@ body {
   }
   .search {
     position: relative;
-    top: 100px;
+    top: 50px;
+    margin: 15px;
+    padding: 35px;
     background: #fff;
     color: #333;
-    padding: 35px;
-    width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
   .search-form {
@@ -403,3 +408,16 @@ h4{
     font-size: 12px;
     padding: 20px;
   }
+  /*Responsive****/
+  @media (min-width: 320px) and (max-width: 1199px) {
+    .top-bar {
+      display: none;
+    }
+    nav{
+      display: block;
+    }
+    .search{
+      display:;
+    }
+  }
+  
