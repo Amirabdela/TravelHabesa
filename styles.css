@@ -468,11 +468,11 @@ h4{
 
     .shop-cards{
       width: 100%;
-      padding: 15px;
+      padding: 0px;
       margin-top: 10px;
       display:grid;
       grid-template-columns: repeat(auto-fit,300px);
-      margin-left: 200px;
+      margin-left: 0px;
     }
     .shop-card img{
       max-width: 100%;
@@ -499,15 +499,14 @@ h4{
     }
     .the-float{
       float: left;
-      width: 100px;
-      height: 100px;
-      margin: 30px;
-      border-radius: 100%;
+      width: 150px;
+      height: 120px;
+      margin: 10px 30px;
+      border-radius: 10%;
     }
     .about-cards{
-      width: 1600px;
-      max-width: 1400px;
-      margin: 50px 100px;
+      width: 100%;
+      margin: 50px 0px;
       font-family: 'poppins',sans-serif;
       font-size: 16px;
       color: #695353;
@@ -518,9 +517,25 @@ h4{
     }
     .im-grid{
       display: grid;
-      display:grid;
-      grid-template-columns: repeat(3, 2fr);
+      grid-template-columns: repeat(3, 200px);
+      grid-template-rows: (2,300px);
     }
+    .im-grid img{
+      width: 200px;
+    }
+    .agrid1{
+    grid-area: 1/1/2/2;
+    }
+   .agrid2{
+      grid-area: 1/2/2/3;
+      }
+    .agrid3{
+        grid-area: 1/3/3/4;
+        }
+    .agrid3{
+          grid-area: 2/1/3/-1;
+          background-color: #000;
+          }
 
     
   /*Responsive****/
