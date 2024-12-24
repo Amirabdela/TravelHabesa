@@ -22,3 +22,28 @@
    - Event-specific packages for weddings, conferences, and more.
 
 ---
+
+## Technologies Used
+- **Frontend**: (e.g., HTML, CSS)
+
+## How to Use
+
+1. **Sign Up**: Create an account to access all features.
+2. **Search**: Use the search functionality to find cars, hotels, or packages.
+3. **Book**: Complete bookings through a simple and secure checkout process.
+4. **Manage**: Access your profile to view or modify bookings.
+
+---
+
+## Future Enhancements
+- Integration with flight booking systems.
+- Advanced user recommendations based on travel history.
+- Mobile app development for on-the-go bookings.
+
+## Contributors
+- Amir Abdela
+- Amanuel Wubishet
+- Ashenafi Mulugeta
+- Ayanaw Mengesha
+- Amanuel Yosef
+- Anna Abdiyu   
