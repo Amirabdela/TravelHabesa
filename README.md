@@ -46,4 +46,4 @@
 - Ashenafi Mulugeta
 - Ayanaw Mengesha
 - Amanuel Yosef
-- Anna Abdiyu   
+- Anna Abdiyu
