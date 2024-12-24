@@ -865,7 +865,7 @@ h4{
   }
 
   .header-book {
-      background: #00704a;
+      background: var(--primary-color);
       color: white;
       padding: 20px;
       text-align: center;
@@ -882,7 +882,7 @@ h4{
 
   .container-book h1 {
       text-align: center;
-      color: #00704a;
+      color: var(--primary-color);
   }
 
   .form-book {
@@ -904,7 +904,7 @@ h4{
   }
 
   .form-book button {
-      background: #00704a;
+      background: var(--primary-color);
       color: white;
       border: none;
       padding: 15px;
@@ -933,7 +933,7 @@ h4{
   .footer-book {
       text-align: center;
       padding: 20px;
-      background: #00704a;
+      background: #884800;
       color: white;
       margin-top: 20px;
   }
@@ -1013,6 +1013,7 @@ h4{
       font-size: 16px;
 
      }
+
      /* .hotel-card a{
        color: #6b6969;
        border: 2px solid;
@@ -1035,6 +1036,65 @@ h4{
      .hotel-star{
       margin: 5px 5px;
      }
+     .car-cards{
+      width: 100%;
+      padding: 0px;
+      margin-top: 10px;
+      display:grid;
+      grid-template-columns: repeat(auto-fit,350px);
+      gap: 10px;
+      margin: auto;
+    }
+     .car-card img{
+      max-width: 350px;
+      height: 390px;
+    }
+    .car-card{
+      margin: 20px;
+      font-family: 'poppins',sans-serif;
+      font-size: 24px;
+      color: #847979;
+      height: 500px;
+      text-transform: uppercase;
+    }
+    .car-card h1{
+     color: #000;
+     font-weight: normal;
+    }
+    .price{
+      margin: 10px 0px;
+    }
+    .car-card {
+      position: relative;
+      overflow: hidden;
+      height: auto;
+      width: 100%;
+      background-color: #f4f4f4;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .car-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .car-hover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      visibility: hidden;
+      height: 100px;
+      width: 100%;
+      transition: visibility 0.3s ease, opacity 0.3s ease;
+      opacity: 0;
+  }
+  
+  .car-card:hover .car-hover {
+      visibility: visible;
+      opacity: 1;
+  }
+  
   /*Responsive****/
   @media (min-width: 320px) and (max-width: 1199px) {
     .top-bar {
