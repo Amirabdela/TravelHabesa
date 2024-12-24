@@ -36,155 +36,81 @@
           <strong>TRAVEL HABESHA.</strong>
         </div>
         <ul>
-          <li class="nav-links"><a href="#">Home</a></li>
-          <li class="nav-links"><a href="#">Packages</a></li>
-          <li class="nav-links"><a href="#">Hotels</a></li>
-          <li class="nav-links"><a href="#">Travel Cars</a></li>
-          <li class="nav-links"><a href="#">About Us</a></li>
-          <li class="nav-links"><a href="#">Contact</a></li>
-          <li class="book-now"><a href="#">Book Now</a> </li>
+          <li class="nav-links"><a href="index.html">Home</a></li>
+          <li class="nav-links"><a href="packages.html">Packages</a></li>
+          <li class="nav-links"><a href="shop.html">shop</a></li>
+          <li class="nav-links"><a href="">Travel Cars</a></li>
+          <li class="nav-links"><a href="about.html">About Us</a></li>
+          <li class="nav-links"><a href="">Contact</a></li>
+          <li class="book-now"><a href="book.html">Book Now</a> </li>
         </ul>
       </nav>
     </div>
     </header>
   <!-- Hero Section -->
-  <section class="hero">
-      <span id="our">OUR PACKAGES</span>
-      <h2>Search your Holiday</h2>
-     <div class="search">
-       <div class="search-form">
-        <!-- Destination Dropdown -->
-        <div class="form-group">
-          <label for="destination">Select Your Destination:</label>
-          <select id="destination">
-            <option>All Destinations</option>
-            <option>Paris</option>
-            <option>New York</option>
-            <option>Tokyo</option>
-          </select>
-        </div>
-  
-        <!-- Date Picker -->
-        <div class="form-group">
-          <label for="date">Select Your Date:</label>
-          <input type="date" id="date" />
-        </div>
-  
-        <!-- Price Slider -->
-        <div class="form-group">
-          <div class="price-v">
-          <label for="price">Max Price:</label>
-          <span class="price-value">2500 $</span>
-        </div>
-          <div class="price-range">
-            <input type="range" id="price" min="0" max="5000" step="100" value="2500" />  
-          </div>
-          <div class="checkbox">
-            <input type="checkbox" id="promotions">
-            <label for="promotions">See only promotions</label>
-          </div>
-        </div>
-  
-        <!-- More Filters Button -->
-        
+  <body class="body-book">
+    <header class="header-book">
+        <h1>Book Your Adventure - Travel Habesa</h1>
+    </header>
+
+    <div class="container-book">
+        <h1>Book Now</h1>
+        <form class="form-book" action="/submit-booking" method="post">
+            <!-- Personal Information -->
+            <div class="form-group-book">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group-book">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group-book">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <!-- Booking Details -->
+            <div class="form-group-book">
+                <label for="destination">Destination</label>
+                <select id="destination" name="destination" required>
+                    <option value="">Select a destination</option>
+                    <option value="simien-mountains">Simien Mountains</option>
+                    <option value="lalibela">Lalibela</option>
+                    <option value="danakil-depression">Danakil Depression</option>
+                    <option value="gondar">Gondar</option>
+                </select>
+            </div>
+
+            <div class="form-group-inline-book">
+                <div class="form-group-book">
+                    <label for="start-date">Start Date</label>
+                    <input type="date" id="start-date" name="start-date" required>
+                </div>
+
+                <div class="form-group-book">
+                    <label for="end-date">End Date</label>
+                    <input type="date" id="end-date" name="end-date" required>
+                </div>
+            </div>
+
+            <div class="form-group-book">
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" name="guests" min="1" max="20" placeholder="Enter number of guests" required>
+            </div>
+
+            <!-- Additional Notes -->
+            <div class="form-group-book">
+                <label for="notes">Special Requests or Notes</label>
+                <textarea id="notes" name="notes" rows="5" placeholder="Enter any special requests"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Booking</button>
+        </form>
     </div>
-    <div class="more-filters">
-          <button>
-            <i class="fa-solid fa-filter"></i> More Filters
-          </button>
-        </div>
-      </div>
-  </div>
-  </section>     
-  <!-- Cards Section -->
-  <section class="cards">
-   <div class="card-g1">
-     <div class="card">
-        <img src="assets/lalibelad3.jpg" alt="Lalibela">
-          <div class="card-content">
-            <h3>Lalibela</h3>
-            <div class="i-city"><i class="fa-solid fa-location-dot"></i><span class="city">addis ababa</span></div>
-            <div class="cult">
-            <div>
-            <h6>cultural</h6>
-            <h6>relax</h6>
-            </div>  
-            <h2>700$</h2>
-            </div>
-            <p>Visit Lalibela's iconic rock-hewn churches,
-              an ancient architectural wonder and UNESCO World Heritage site.
-            </p>
-            <button class="detail"><a href="">DETAILS</a></button>
-         </div>
-      </div>
-      <div class="card">
-        <img src="assets/lalibelad3.jpg" alt="Lalibela">
-          <div class="card-content">
-            <h3>Lalibela</h3>
-            <div class="i-city"><i class="fa-solid fa-location-dot"></i><span class="city">addis ababa</span></div>
-            <div class="cult">
-            <div>
-            <h6>cultural</h6>
-            <h6>relax</h6>
-            </div>  
-            <h2>700$</h2>
-            </div>
-            <p>Visit Lalibela's iconic rock-hewn churches,
-              an ancient architectural wonder and UNESCO World Heritage site.
-            </p>
-            <button class="detail"><a href="">DETAILS</a></button>
-         </div>
-      </div>
-      <div class="card">
-        <img src="assets/lalibelad3.jpg" alt="Lalibela">
-          <div class="card-content">
-            <h3>Lalibela</h3>
-            <div class="i-city"><i class="fa-solid fa-location-dot"></i><span class="city">addis ababa</span></div>
-            <div class="cult">
-            <div>
-            <h6>cultural</h6>
-            <h6>relax</h6>
-            </div>  
-            <h2>700$</h2>
-            </div>
-            <p>Visit Lalibela's iconic rock-hewn churches,
-              an ancient architectural wonder and UNESCO World Heritage site.
-            </p>
-            <button class="detail"><a href="">DETAILS</a></button>
-         </div>
-      </div>  
-    </div>
-    <div class="card-g1">
-      <div class="card">
-         <img src="assets/lalibelad3.jpg" alt="Lalibela">
-           <div class="card-content">
-             <h3>Lalibela</h3>
-             <p>Visit Lalibela's iconic rock-hewn churches, an ancient architectural wonder and UNESCO World Heritage site.</p>
-             <span>700$</span>
-             <button class="detail"><a href="">DETAILS</a></button>
-          </div>
-       </div>
-       <div class="card">
-         <img src="assets/lalibelad3.jpg" alt="Lalibela">
-           <div class="card-content">
-             <h3>Lalibela</h3>
-             <p>Visit Lalibela's iconic rock-hewn churches, an ancient architectural wonder and UNESCO World Heritage site.</p>
-             <span>700$</span>
-             <button class="detail"><a href="">DETAILS</a></button>
-          </div>
-       </div>
-       <div class="card">
-         <img src="assets/lalibelad3.jpg" alt="Lalibela">
-           <div class="card-content">
-             <h3>Lalibela</h3>
-             <p>Visit Lalibela's iconic rock-hewn churches, an ancient architectural wonder and UNESCO World Heritage site.</p>
-             <span>700$</span>
-             <button class="detail"><a href="">DETAILS</a></button>
-          </div>
-       </div>   
-     </div>
-    
-  </section>
 
   <!-- Footer -->
 <div class="footer-container">
