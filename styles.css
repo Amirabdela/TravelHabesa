@@ -1094,7 +1094,19 @@ h4{
       visibility: visible;
       opacity: 1;
   }
-  
+  .details-p11{
+    background-color: #ffffff;
+    text-align: center;
+    width: 100%;
+  }
+  .details-p11 img{
+    width: 100%;
+  }
+  .detail-p{
+    font-size: 36px;
+    font-family: 'poppins', sans-serif;
+
+  }  
   /*Responsive****/
   @media (min-width: 320px) and (max-width: 1199px) {
     .top-bar {
