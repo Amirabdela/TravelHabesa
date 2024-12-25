@@ -23,6 +23,9 @@ body {
     padding: 0px 0;
     color: var(--primary-dark);
     height: 116.6px;
+     /* position: fixed;  */
+    z-index: 1900;
+    width: 100%;
   }
   .top-bar {
     background-color: var(--primary-color);
@@ -1094,19 +1097,65 @@ h4{
       visibility: visible;
       opacity: 1;
   }
-  .details-p11{
+  .details-ps {
     background-color: #ffffff;
     text-align: center;
     width: 100%;
+    padding: 20px;
   }
-  .details-p11 img{
+  
+  .details-ps img {
     width: 100%;
+    height: auto; /* Ensures the image scales properly */
   }
-  .detail-p{
+  
+  .detail-p {
     font-size: 36px;
-    font-family: 'poppins', sans-serif;
-
-  }  
+    font-family: 'Poppins', sans-serif;
+    color: #333; /* Add a color for better contrast */
+    margin: 20px 0;
+  }
+  
+  .detail-pp {
+    font-size: 16px; /* Choose a readable font size */
+    font-family: 'Poppins', sans-serif;
+    color: #555; /* A softer contrast for long text */
+    line-height: 1.6; /* Improves readability */
+    margin: 20px;
+    padding: 0 15px;
+    text-align: justify;
+  }
+  
+  .bookppp {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--primary-light); /* Matching theme color */
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 700px;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  
+  .bookppp:hover {
+    background-color: #f29035; /* Slightly brighter for hover effect */
+    box-shadow: 0 4px 8px rgba(182, 50, 13, 0.2);
+  }
+  .header-booknow{
+    header {
+      padding: 0px 0;
+      color: var(--primary-dark);
+      height: 116.6px;
+       position: relative; 
+      z-index: 1900;
+      width: 100%;
+    }
+  }
+  
   /*Responsive****/
   @media (min-width: 320px) and (max-width: 1199px) {
     .top-bar {
