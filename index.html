@@ -10,8 +10,8 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <link
   rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>  
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  
+  <script src="mainJS/index.js"></script>
 </head>
 <body>
   <!-- Header Section -->
@@ -55,8 +55,8 @@
     <div class="nav-bar">
         <nav>
             <!-- Logo and menu icon for small screens -->
-            <div class="logo">
-                <strong>TRAVEL HABESHA.</strong>
+            <div class="logo" id="logo">
+                <strong">TRAVEL HABESHA.</strong>
                 <i class="small-block fas fa-bars menu-icon"></i>
             </div>
             <!-- Navigation links -->
@@ -72,6 +72,83 @@
         </nav>
     </div>
 </header>
+<!-- sidebar -->
+<div id="sidebar" class="sidebar">
+  <a href="signIn.html" class="sidebar-header">
+    <i class="fa-solid fa-user-large"></i>
+    <span>Hello, sign in</span>
+  </a>
+  <div class="sidebar-sections">
+    <!-- Travel Packages -->
+    <div class="sidebar-section">
+      <h4>Travel Packages</h4>
+      <ul>
+        <li class="sidebar-list">Adventure Tours<i class="fa-solid fa-angle-right arrow"></i></li>
+        <li class="sidebar-list">Cultural Tours<i class="fa-solid fa-angle-right arrow"></i></li>
+        <li class="sidebar-list">Luxury Getaways<i class="fa-solid fa-angle-right arrow"></i></li>
+      </ul>
+    </div>
+    <!-- Travel Destinations -->
+    <div class="sidebar-section">
+      <h4>Explore by Destination</h4>
+      <ul>
+        <li class="sidebar-list">Ethiopia<i class="fa-solid fa-angle-right arrow"></i></li>
+        <li class="sidebar-list">Africa<i class="fa-solid fa-angle-right arrow"></i></li>
+        <li class="sidebar-list">Asia<i class="fa-solid fa-angle-right arrow"></i></li>
+        <li class="sidebar-list">Europe<i class="fa-solid fa-angle-right arrow"></i></li>
+        <li class="see-all-toggle ">See all<i class="fa-solid fa-chevron-down arrow"></i></li>
+        <div class="hidden-lists">
+          <li class="sidebar-list">North America<i class="fa-solid fa-angle-right arrow"></i></li>
+          <li class="sidebar-list">South America<i class="fa-solid fa-angle-right arrow"></i></li>
+          <li class="sidebar-list">Oceania<i class="fa-solid fa-angle-right arrow"></i></li>
+          <li class="see-less-toggle ">See less<i class="fa-solid fa-chevron-up arrow"></i></li>
+        </div>
+      </ul>
+    </div>
+    <!-- Travel Services -->
+    <div class="sidebar-section">
+      <h4>Travel Services</h4>
+      <ul>
+        <li class="sidebar-list">Flight Bookings<i class="fa-solid fa-angle-right arrow"></i></li>
+        <li class="sidebar-list">Hotel Reservations<i class="fa-solid fa-angle-right arrow"></i></li>
+        <li class="sidebar-list">Car Rentals<i class="fa-solid fa-angle-right arrow"></i></li>
+        <li class="sidebar-list">Travel Insurance<i class="fa-solid fa-angle-right arrow"></i></li>
+        <li class="see-all-toggle-two">See all<i class="fa-solid fa-chevron-down arrow"></i></li>
+        <div class="hidden-lists-two">
+          <li class="sidebar-list">Cruise Bookings</li>
+          <li class="see-less-toggle-two">See less<i class="fa-solid fa-chevron-up arrow"></i></li>
+        </div>
+      </ul>
+    </div>
+    <!-- Travel Tips & Resources -->
+    <div class="sidebar-section">
+      <h4>Travel Tips & Resources</h4>
+      <ul>
+        <li class="sidebar-list">Travel Blogs<i class="fa-solid fa-angle-right arrow"></i></li>
+        <li class="sidebar-list">Travel Guides<i class="fa-solid fa-angle-right arrow"></i></li>
+        <li class="sidebar-list">Packing Tips<i class="fa-solid fa-angle-right arrow"></i></li>
+        <li class="sidebar-list">Currency Converters<i class="fa-solid fa-angle-right arrow"></i></li>
+        <li class="sidebar-list">Travel Safety<i class="fa-solid fa-angle-right arrow"></i></li>
+      </ul>
+    </div>
+    <!-- Help & Settings -->
+    <div class="sidebar-section">
+      <h4>Help & Settings</h4>
+      <ul>
+        <li class="sidebar-help"><a href="#">Your Account</a></li>
+        <li class="sidebar-help sidebar-help-LN"><i class="fa-solid fa-globe"></i>English</li>
+        <li class="sidebar-help sidebar-help-LN"><img src="../images/flags/ethiopia_flag.png" alt="Ethiopia Flag" />Ethiopia</li>
+        <li class="sidebar-help"><a href="customerService.html">Customer Service</a></li>
+        <li class="sidebar-help sidebar-help-last"><a href="signIn.html">Sign in</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<button class="close-btn" id="closeBtn">&times;</button>
+
+<!-- Overlay (Darkens the rest of the page when the sidebar is active) -->
+<div id="overlay" class="overlay"></div>
 
   <!-- Cards Section -->
   <section class="home">
@@ -179,41 +256,9 @@
 </section>
 
 <section>
-  <div class="year">
-    <p><strong>Culture:</strong>Ethiopia is known for its rich cultural heritage, 
-      from its ancient rock-hewn churches to its vibrant traditional festivals, 
-      each showcasing the unique customs and 
-      traditions that define the nation's identity. </p>
-      <p><strong>Landscape:</strong> Ethiopias diverse landscapes range from the towering peaks of the Simien Mountains to the unique, otherworldly Danakil Depression,
-         offering stunning natural beauty for all types of adventurers and nature lovers.</p>
-         <p><strong>Resorts:</strong> Ethiopia offers a variety of luxurious resorts, from lakeside retreats around Lake Tana to peaceful escapes in the **Bale Mountains, 
-          providing serene environments for relaxation and an immersive nature experience.</p>
-          <p><strong>Historic Town:</strong> Lalibela is famous for its stunning rock-hewn churches, carved from solid stone, 
-            reflecting Ethiopias rich architectural and religious heritage. A UNESCO World Heritage site, 
-            it attracts visitors for its historical significance and unique beauty.</p>
-      
-  </div>
+  
   <section>
-    <div class="year">
-      <!-- Cultural heritage description -->
-      <p><strong>Culture:</strong> Ethiopia is known for its rich cultural heritage, 
-        from its ancient rock-hewn churches to its vibrant traditional festivals, 
-        each showcasing the unique customs and 
-        traditions that define the nation's identity. </p>
-        
-      <!-- Description of Ethiopia's diverse landscapes -->
-      <p><strong>Landscape:</strong> Ethiopia's diverse landscapes range from the towering peaks of the Simien Mountains to the unique, otherworldly Danakil Depression,
-           offering stunning natural beauty for all types of adventurers and nature lovers.</p>
-           
-      <!-- Description of luxurious resorts in Ethiopia -->
-      <p><strong>Resorts:</strong> Ethiopia offers a variety of luxurious resorts, from lakeside retreats around Lake Tana to peaceful escapes in the **Bale Mountains, 
-            providing serene environments for relaxation and an immersive nature experience.</p>
-            
-      <!-- Description of the historic town of Lalibela -->
-      <p><strong>Historic Town:</strong> Lalibela is famous for its stunning rock-hewn churches, carved from solid stone, 
-              reflecting Ethiopia's rich architectural and religious heritage. A UNESCO World Heritage site, 
-              it attracts visitors for its historical significance and unique beauty.</p>
-    </div>
+    
   </section>
   
 </section>
@@ -290,13 +335,7 @@
 </section>
 
 <section>
-  <div style="font-size: 33px; color: #000;"class="year">
-    <p >Rich Cultural Heritage</p>
-    <p>Stunning Landscapes</p>
-    <p>Historical Significance</p>
-    <p>Warm Hospitality</p>
-      
-  </div>
+  
 </section>
 
 <section>
@@ -309,13 +348,7 @@
 </section>
 <section>
 
-  <div class="year" style="text-align: right;">
-    <p> Ethiopia’s diverse cultures, languages, and ancient traditions, like the historic rock-hewn churches and tribal customs, offer an immersive cultural experience.</p>
-    <p>From the Simien Mountains to the Danakil Depression, Ethiopia’s dramatic landscapes provide breathtaking views and unique trekking adventures.</p>
-    <p>Ethiopia is home to ancient civilizations, with historical sites like Axum, Lalibela, and the birth of humanity, offering a deep dive into world history.</p>
-    <p>Ethiopian people are known for their exceptional hospitality, making travelers feel welcomed and part of the community.</p>
-      
-  </div>
+
 </section>
 
   <!-- Footer -->
